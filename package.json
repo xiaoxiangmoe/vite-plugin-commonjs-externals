@@ -1,0 +1,30 @@
+{
+  "name": "vite-plugin-commonjs-externals",
+  "version": "0.1.0",
+  "main": "dist",
+  "repository": "https://github.com/xiaoxiangmoe/vite-plugin-commonjs-externals.git",
+  "author": "ZHAO Jinxiang <xiaoxiangmoe@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "vite-plugin",
+    "commonjs"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "dependencies": {
+    "acorn": "^8.0.5",
+    "es-module-lexer": "^0.4.1",
+    "magic-string": "^0.25.7"
+  },
+  "devDependencies": {
+    "@types/estree": "^0.0.46",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2",
+    "vite": "^2.0.5"
+  }
+}
