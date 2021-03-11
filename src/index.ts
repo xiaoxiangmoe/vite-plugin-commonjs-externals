@@ -94,7 +94,7 @@ const commonjsExternalsPlugin = ({
       }
 
       const requireStatement = (identifiers: string) =>
-        `const ${identifiers}=(()=>{const mod = require("${node.source.value}");return mod?.__esModule ? mod : Object.assign(Object.create(null),mod,{default:mod,[Symbol.toStringTag]:"Module"})})();`;
+        `const ${identifiers}=(()=>{const mod = require("${node.source.value}");return mod && mod.__esModule ? mod : Object.assign(Object.create(null),mod,{default:mod,[Symbol.toStringTag]:"Module"})})();`;
       const localNamesIdentifiers = [
         ...importSpecifierList.map(
           spec => `${spec.imported.name}: ${spec.local.name}`
