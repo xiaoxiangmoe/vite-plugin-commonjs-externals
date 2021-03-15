@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-commonjs-externals",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist",
   "repository": "https://github.com/xiaoxiangmoe/vite-plugin-commonjs-externals.git",
   "author": "ZHAO Jinxiang <xiaoxiangmoe@gmail.com>",
