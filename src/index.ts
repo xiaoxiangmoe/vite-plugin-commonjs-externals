@@ -127,7 +127,7 @@ function transformEsm(
 
 const commonjsExternalsPlugin = ({
   externals,
-  exts = ['ts', 'tsx', 'js', 'jsx', 'mjs', 'cjs'],
+  exts = ['ts', 'tsx', 'js', 'jsx', 'mjs', 'cjs', 'vue'],
 }: CommonjsExternalsPluginOptions): Plugin => ({
   name: 'commonjs-externals',
   async transform(code, id) {
