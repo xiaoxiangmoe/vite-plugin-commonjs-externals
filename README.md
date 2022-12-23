@@ -10,9 +10,15 @@ For example:
 
 ```ts
 import commonjsExternals from 'vite-plugin-commonjs-externals';
+
+const externals = ['path', /^electron(\/.+)?$/];
+
 export default {
+  optimizeDeps: {
+    exclude: externals,
+  },
   plugins: commonjsExternals({
-    externals: ['path', /^electron(\/.+)?$/],
+    externals,
   }),
 };
 ```
@@ -90,6 +96,9 @@ const commonjsPackages = [
 ] as const;
 
 export default defineConfig({
+  optimizeDeps: {
+    exclude: commonjsPackages,
+  },
   plugins: [reactRefresh(), commonjsExternals({ externals: commonjsPackages })],
 });
 ```
