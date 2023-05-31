@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "target": "ESNext",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "declaration": true,
-    "skipLibCheck": true,
+    "target": "ES2017",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noEmit": true,
     "noUncheckedIndexedAccess": true
   }
 }
